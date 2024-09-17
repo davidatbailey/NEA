@@ -1,0 +1,291 @@
+﻿@page
+@model PuzzleModel
+@{
+    ViewData["Title"] = "Home page";
+    var level = Request.Query["level"];
+    var debug = Request.Query["debug"];
+    var easy = false;
+    var medium = false;
+    var hard = false;
+
+    if (level == "1")
+    {
+        easy = true;
+    }
+    else if (level == "2")
+    {
+        medium = true;
+    }
+    else if (level == "3")
+    {
+        hard = true;
+    }
+}
+
+@{
+    if (debug == "true")
+    {
+    <style>
+                                            h3 {
+                                                opacity: 1;
+                                            }
+    </style>
+    }
+    else
+    {
+    <style>
+                                            h3 {
+                                                opacity: 0;
+                                            }
+    </style>
+    }
+}
+
+<style>
+
+    p {
+        font-size: 48px;
+    }
+
+    .timer {
+        font-size: 64px;
+    }
+
+    .button {
+        background-color: black;
+        border: 0px;
+        padding: 48px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 6px #000000;
+        transition: all 0.5s ease;
+    }
+
+        .button:hover {
+            opacity: 0.6;
+            box-shadow: 0px 0px 24px #AAAAAA;
+        }
+    
+    .button:focus {
+        opacity: 0.9;
+        box-shadow: 0px 0px 8px #FFFFFF;
+    } 
+
+
+    .button4 {
+        background-color: #30B0F0;
+    }
+
+    .light {
+        background-color: #AAAAAA;
+        padding: 64px;
+        transition: all 0.1s ease;
+        
+    }
+    .light:hover {
+        opacity: 1;
+        box-shadow: 0px 0px 6px #000000;
+    }
+
+    .button3 {
+        background-color: #E01040;
+    }
+
+    .button2 {
+        background-color: #20E440;
+    }
+
+    .button1 {
+        background-color: #DAEA10;
+    }
+
+    .start {
+        background-color: #E030D0;
+    }
+
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Puzzle</h1>
+    <p>welcome to the puzzle</p>
+    <p>Level is @level</p>
+    <div><h2>Time left = </h2><span id="timer" class="timer">100</span></div>
+
+    @{
+        if (easy)
+        {
+                                                                            <text>
+                                                                                <p>╰(*°▽°*)╯</p>
+                                                                            </text>
+        }
+        else if (medium)
+        {
+                                                                            <text>
+                                                                                <p>(´。＿ 。｀)</p>
+                                                                            </text>
+        }
+        else if (hard)
+        {
+                                                                            <text>
+                                                                                <p>┻━┻ ︵ ＼( °□° )／ ︵ ┻━┻</p>
+                                                                            </text>
+        }
+    }
+
+    @{
+                                        <button class="button light" id="simonLight"></button>
+                                        <br></br>
+                                        <button class="button button1" id="button1" onclick="responseButtonClicked(1);"></button>
+                                        <button class="button button2" id="button2" onclick="responseButtonClicked(2);"></button>
+                                        <button class="button button3" id="button3" onclick="responseButtonClicked(3);"></button>
+                                        <button class="button button4" id="button4" onclick="responseButtonClicked(4);"></button>
+                                        <br></br>
+
+                                        <button class="button start" onclick="startSimonSaysGame();">Start Game</button>
+                                        <h3 id="sequenceOutput">sequence</h3>
+                                        <h3 id="debugger">...</h3>
+                                        <h2 id="victoryText">...</h2>
+    }
+    <script>
+
+        var responseCounter = 0;
+        var timerIntervalId;
+        var gameRunning = false;
+
+        function startTimer() {
+            timerIntervalId = setInterval(function () { countdown(); }, 250);
+            var startTime = Date.now();
+            var endTime = startTime + 100000;
+            function countdown() {
+                var currentTime = Date.now();
+                var difference = endTime - currentTime;
+                if (difference < 0) {
+                    difference = 0
+                }
+                var displayTimer = Math.floor(difference * 0.001)
+                document.getElementById("timer").innerHTML = displayTimer;
+            }
+        }
+
+        function success() {
+            document.getElementById("debugger").innerHTML = "completed module " + (responseCounter + 1) + @debug;
+            document.getElementById("victoryText").innerHTML = "completed module well done!";
+            disableButtons();
+            clearInterval(timerIntervalId);
+            return;
+        }
+        function fail() {
+            document.getElementById("debugger").innerHTML = "failed module " + (responseCounter + 1) + @debug;
+            document.getElementById("victoryText").innerHTML = ":(";
+            disableButtons();
+            clearInterval(timerIntervalId);
+            return;
+        }
+
+
+        function startSimonSaysGame() {
+
+            if (gameRunning == true) {
+                return;
+            }
+
+            gameRunning = true;
+            document.getElementById("victoryText").innerHTML = "...";
+            document.getElementById("debugger").innerHTML = "...";
+            var intervalId;
+            var counter = 0;
+            let colors = ["#DAEA10", "#20E440", "#E01040", "#30B0F0"];
+            responseCounter = 0;
+
+
+            sequence = newSequence(@level, 4);
+            correctResponse = sequence;
+            document.getElementById('sequenceOutput').innerHTML = "sequence: " + sequence;
+
+            disableButtons();
+
+
+            if (!intervalId) {
+                intervalId = setInterval(function () { showNextLight(); }, 1000);
+            }
+
+
+
+            function newSequence(sequenceLength, options) {
+
+                var newSeq = new Array();
+
+                for (i = 0; i <= sequenceLength; i++) {
+                    newSeq.push(Math.floor(Math.random() * options))
+                }
+
+
+                return newSeq;
+
+
+            }
+
+            function showNextLight() {
+
+
+                greyElement = document.getElementById("simonLight")
+
+                greyElement.style.backgroundColor = colors[sequence[counter]];
+
+                setTimeout(() => { hideLight(greyElement) }, 250);
+
+                counter++;
+
+                if (counter > sequence.length) {
+                    clearInterval(intervalId);
+                    enableButtons();
+                    startTimer();
+                }
+
+                function hideLight(el) {
+                    el.style.backgroundColor = '#AAAAAA';
+                }
+
+                return;
+            }
+        }
+
+
+        function responseButtonClicked(buttonNo) {
+            
+            var correctButton = correctResponse[responseCounter];
+
+            if (buttonNo != (correctButton + 1)) {
+                document.getElementById("debugger").innerHTML = "failed module " + (responseCounter + 1) + @debug;
+                fail();
+
+                return;
+            }
+            if (responseCounter == (correctResponse.length - 1)) {
+                document.getElementById("debugger").innerHTML = "completed module " + (responseCounter + 1) +@debug;
+                success();
+                return;
+            }
+            document.getElementById("debugger").innerHTML = "YAY " + (responseCounter + 1);
+
+                
+            responseCounter++;
+            
+        }
+
+        function disableButtons() {
+            document.getElementById("button1").disabled = true;
+            document.getElementById("button2").disabled = true;
+            document.getElementById("button3").disabled = true;
+            document.getElementById("button4").disabled = true;
+        }
+        function enableButtons() {
+            document.getElementById("button1").disabled = false;
+            document.getElementById("button2").disabled = false;
+            document.getElementById("button3").disabled = false;
+            document.getElementById("button4").disabled = false;
+        }
+    </script>
+
+
+
+</div>

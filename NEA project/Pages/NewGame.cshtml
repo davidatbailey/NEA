@@ -1,0 +1,97 @@
+﻿@page
+@model NewGameModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    p{
+        font-size: 48px;
+    }
+    .button{
+        
+        background-color: black;
+        border: 0px;
+        padding: 48px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 6px #000000;
+        transition: all 0.5s ease;
+        opacity: 1;
+    }
+    .button:hover{
+        opacity: 0.7;
+        box-shadow: 0px 0px 24px #AAAAAA;
+    }
+    .buttonhard{
+        background-color: #E01040;
+    }
+
+    .buttoneasy {
+        background-color: #20E440;
+    }
+    .buttonmid {
+        background-color: #DAEA10;
+    }
+    
+    input {
+        margin: 8px;
+    }
+
+
+
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">New Game</h1>
+    <p>SELECT LEVEL:</p>
+    <button class="button buttoneasy" onclick="navigateToPuzzle(1)">EASY</button>
+    <button class="button buttonmid" onclick="navigateToPuzzle(2)">MIDDLE</button>
+    <button class="button buttonhard" onclick="navigateToPuzzle(3)">HARD</button>
+    <div>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+    <input type="checkbox" id="debug" name="debug" />
+    <label for="debug">debug</label>
+  </div>
+    <script>
+    function navigateToPuzzle(level) {
+        const debugCheckbox = document.getElementById('debug');
+        let url = `/puzzle?level=${level}`;
+        if (debugCheckbox.checked) {
+            url += '&debug=true';
+        }
+        else {
+            url += '&debug=false';
+        }
+        window.location.href = url;
+    }
+</script>
+
+</div>

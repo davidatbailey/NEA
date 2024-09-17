@@ -1,0 +1,78 @@
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\appsettings.Development.json
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\appsettings.json
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\NEA project.staticwebassets.runtime.json
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\NEA project.exe
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\NEA project.deps.json
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\NEA project.runtimeconfig.json
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\NEA project.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\NEA project.pdb
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Humanizer.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.csproj.AssemblyReference.cache
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.AssemblyInfoInputs.cache
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.AssemblyInfo.cs
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.csproj.CoreCompileInputs.cache
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.MvcApplicationPartsAssemblyInfo.cs
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.MvcApplicationPartsAssemblyInfo.cache
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.RazorAssemblyInfo.cache
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.RazorAssemblyInfo.cs
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\staticwebassets\msbuild.NEA project.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\staticwebassets\msbuild.build.NEA project.props
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.NEA project.props
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.NEA project.props
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\staticwebassets.build.json
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\staticwebassets.development.json
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\scopedcss\bundle\NEA project.styles.css
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\scopedcss\projectbundle\NEA project.bundle.scp.css
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.csproj.CopyComplete
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\refint\NEA project.dll
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.pdb
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\NEA project.genruntimeconfig.cache
+D:\Users\David\Source\Repos\NEA project\NEA project\obj\Debug\net6.0\ref\NEA project.dll
